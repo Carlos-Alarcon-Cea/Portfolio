@@ -1,0 +1,98 @@
+<header>
+  <button
+    class="openMenu"
+    type="button"
+    aria-label="Abrir menú"
+    (click)="openMenu()"
+  >
+    <i class="bx bx-menu"></i>
+  </button>
+
+  <nav
+    class="navbar glass"
+    [class.hidden]="isMobile() && !menuOpen()"
+    [class.visible]="isMobile() && menuOpen()"
+  >
+    <button
+      class="closeMenu"
+      type="button"
+      aria-label="Cerrar menú"
+      (click)="closeMenu()"
+    >
+      <i class="bx bx-x"></i>
+    </button>
+
+    <ul class="menu">
+      <li class="navbar-item">
+        <a
+          href="#Home"
+          class="scroll"
+          [class.active]="activeSection() === 'Home'"
+          (click)="scrollToSection('Home', $event)"
+        >
+          Inicio
+        </a>
+      </li>
+      <span class="divider">•</span>
+      <li class="navbar-item">
+        <a
+          href="#Projects"
+          class="scroll"
+          [class.active]="activeSection() === 'Projects'"
+          (click)="scrollToSection('Projects', $event)"
+        >
+          Proyectos
+        </a>
+      </li>
+      <span class="divider">•</span>
+      <li class="navbar-item">
+        <a
+          href="#About"
+          class="scroll"
+          [class.active]="activeSection() === 'About'"
+          (click)="scrollToSection('About', $event)"
+        >
+          Sobre mí
+        </a>
+      </li>
+      <span class="divider">•</span>
+      <li class="navbar-item">
+        <div class="language-toggle">
+          <button
+            type="button"
+            id="btn-es"
+            class="lang-btn"
+            [class.active]="languageService.currentLanguage() === 'es'"
+            (click)="setLanguage('es')"
+          >
+            Esp
+          </button>
+          <button
+            type="button"
+            id="btn-en"
+            class="lang-btn"
+            [class.active]="languageService.currentLanguage() === 'en'"
+            (click)="setLanguage('en')"
+          >
+            Eng
+          </button>
+        </div>
+      </li>
+      <span class="divider">•</span>
+      <li class="navbar-item">
+        <button
+          class="theme-toggle-B"
+          type="button"
+          aria-label="Cambiar tema"
+          (click)="toggleTheme()"
+        >
+          @if (themeService.isLightMode()) {
+            <i class="bx bx-sun"></i>
+          } @else {
+            <i class="bx bx-moon"></i>
+          }
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
