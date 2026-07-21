@@ -1,0 +1,163 @@
+<main class="main-container" id="Home">
+  <div class="bento-container">
+    <div class="bento-item glass header">
+      <h1>¡Vamos a ver mi portafolio!</h1>
+      <h3><span class="text">Ingeniero en sistemas</span></h3>
+      <p>
+        Me encanta lo que hago porque me permite combinar mi creatividad con
+        habilidades de comunicación visual y capacidad para resolver problemas.
+      </p>
+    </div>
+
+    <div class="bento-item glass social-links">
+      <ul class="social-list">
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/javier_cea.30/"
+            class="social-link instagram"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <p>Instagram</p>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/TechCea"
+            class="social-link github"
+          >
+            <i class="bx bxl-github"></i>
+          </a>
+          <p>GitHub</p>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/carlos-javier-alarcon-cea-004019303/"
+            class="social-link linkedin"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <p>Linkedin</p>
+        </li>
+        <li>
+          <a href="#" class="social-link discord" (click)="copyDiscord($event)">
+            <i class="bx bxl-discord"></i>
+          </a>
+          <p>Discord</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bento-item glass studies">
+      <div class="card studies">
+        <h3>Estudios</h3>
+        <p>
+          Estudiante de Ingeniería en Sistemas en la Universidad Católica de El
+          Salvador (UNICAES)
+        </p>
+      </div>
+    </div>
+
+    <div class="bento-item glass cv">
+      <div class="image-blur"></div>
+      <a
+        href="assets/Currículum Carlos Javier Cea.pdf"
+        download="CV Javier.pdf"
+        class="descargar-cv glass-button"
+      >
+        <span>Descargar CV</span>
+      </a>
+    </div>
+
+    <div class="bento-item glass scrum-card">
+      <i class="bx bxs-cog rotating-gear"></i>
+      <span class="scrum-title">Metodología Scrum</span>
+      <span class="scrum-text">
+        Para el desarrollo de proyectos, utilizo metodologías Scrum.
+      </span>
+    </div>
+
+    <div class="bento-item glass avatar">
+      <div class="image-container">
+        <img
+          [src]="profilePicture()"
+          alt="Foto de Javier Alarcon"
+          class="Foto"
+        />
+      </div>
+    </div>
+
+    <div class="bento-item glass contact">
+      <div class="contact-tag">
+        <i class="bx bx-message-rounded"></i>
+        <span>Contactar</span>
+      </div>
+      <p>
+        Creando experiencias digitales únicas.<br />¡Hablemos sobre tu próximo
+        proyecto!
+      </p>
+      <div class="contact-buttons">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="mailto:jav.alarconcea@gmail.com"
+          class="contact-button"
+        >
+          Envíame un Email
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="http://t.me/TechCea"
+          class="contact-button"
+        >
+          DM en Telegram
+        </a>
+      </div>
+    </div>
+
+    <div class="bento-item glass Tittle">
+      <article>
+        <h2 class="h2-big">Hey I'm</h2>
+        <div class="intro">
+          <div class="title">
+            <h1>TechCea</h1>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="bento-item glass Pixel">
+      <div class="content">
+        <div class="right">
+          <img src="img/Intro.gif" alt="" />
+        </div>
+        <div class="left">
+          <div class="status">
+            <div class="status-dot"></div>
+            <h4>Disponibles para nuevos proyectos</h4>
+          </div>
+          <div class="tags-container">
+            <div class="tag">
+              <i class="bi bi-geo-alt"></i> El Salvador, Santa Ana
+            </div>
+            <div class="tag">
+              <i class="bi bi-mortarboard"></i> Systems Engineer
+            </div>
+            <div class="tag">
+              <i class="bi bi-building-gear"></i> Universidad Catolica de el Salvador
+            </div>
+            <div class="tag">
+              <i class="bi bi-laptop"></i> Web Applications
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
