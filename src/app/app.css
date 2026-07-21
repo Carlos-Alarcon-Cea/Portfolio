@@ -3,13 +3,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 6rem 2rem 2rem;
 }
 
 .phase-preview__card {
   max-width: 32rem;
   padding: 2rem;
   text-align: center;
+}
+
+.phase-preview__avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.18);
 }
 
 .phase-preview__label {
@@ -39,6 +48,7 @@
   line-height: 1.5;
 }
 
+.phase-preview__text code,
 .phase-preview__hint code {
   color: var(--light-orange);
   font-size: 0.85rem;

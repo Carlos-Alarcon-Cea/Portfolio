@@ -1,4 +1,56 @@
+<header>
+  <span class="openMenu" aria-hidden="true"><i class="fa-solid fa-bars"></i></span>
+  <nav class="navbar glass">
+    <span class="closeMenu" aria-hidden="true"><i class="fa-solid fa-xmark"></i></span>
+    <ul class="menu">
+      <li class="navbar-item">
+        <a href="#Home" class="scroll active" id="nav-home">Inicio</a>
+      </li>
+      <span class="divider">•</span>
+      <li class="navbar-item">
+        <a href="#Projects" class="scroll" id="nav-projects">Proyectos</a>
+      </li>
+      <span class="divider">•</span>
+      <li class="navbar-item">
+        <a href="#About" class="scroll" id="nav-about">Sobre mí</a>
+      </li>
+      <span class="divider">•</span>
+      <li class="navbar-item">
+        <div id="language-toggle" class="language-toggle">
+          <span id="btn-es" class="lang-btn active">Esp</span>
+          <span id="btn-en" class="lang-btn">Eng</span>
+        </div>
+      </li>
+      <span class="divider">•</span>
+      <li class="navbar-item">
+        <button id="theme-toggle" class="theme-toggle-B" type="button" aria-label="Cambiar tema">
+          <i class="bx bx-moon"></i>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
 <main class="phase-preview">
+  <section class="phase-preview__card glass">
+    <img
+      class="phase-preview__avatar"
+      src="img/Picture0-dark.png"
+      alt="Avatar de TechCea"
+      width="96"
+      height="96"
+    />
+    <p class="phase-preview__label">Fases 2.3 + 2.4</p>
+    <h1>Navbar y assets listos</h1>
+    <p class="phase-preview__text">
+      CSS del navbar cargado, iconos externos activos e imágenes servidas desde
+      <code>public/</code>.
+    </p>
+    <p class="phase-preview__hint">
+      Redimensiona la ventana a menos de 768px para ver el botón hamburguesa. El menú
+      móvil se activará en la Fase 3 con JavaScript.
+    </p>
+  </section>
 </main>
 
 <router-outlet />
