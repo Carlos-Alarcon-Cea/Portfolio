@@ -1,0 +1,45 @@
+.phase-preview {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.phase-preview__card {
+  max-width: 32rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.phase-preview__label {
+  color: var(--light-orange);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.phase-preview__card h1 {
+  color: var(--white);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.phase-preview__text {
+  color: var(--textgray);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.phase-preview__hint {
+  color: var(--textgray2);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.phase-preview__hint code {
+  color: var(--light-orange);
+  font-size: 0.85rem;
+}

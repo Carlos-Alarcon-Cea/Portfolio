@@ -1,0 +1,32 @@
+.light-mode {
+  --white: #090a0f;
+  --dark: #f2efe5;
+  --black: #ffffff;
+  --orange-base: #5f5bd9;
+  --otherorange: #6864e0;
+  --orange-second: #6864e0;
+  --light-orange: #5f5bd9;
+  --dark-red: #387adf;
+  --orangep: rgb(42, 36, 212);
+  --green: #06d001;
+  --darkorange: #7f63a6;
+  --darkblue: #333a73;
+  --blue: #387adf;
+  --lightblue: #50c4ed;
+  --crimson-red: #333a73;
+  --purpledark: #591441;
+  --purple: #7f63a6;
+  --brown: #8c4842;
+  --gray: #ffffff;
+  --textgray: #2f3645;
+  --lightgray: #5f5bd9;
+  --textgray2: #555;
+  --light-white: #5f5bd9;
+  --scroll: #ffe9d0;
+  --background-dark: radial-gradient(ellipse at bottom, #fffed3 0%, #ffe9d0 100%);
+  --gradient-6: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+  --gradient-7: linear-gradient(90deg, #9face6 35%, #74ebd5 100%);
+  --pdf: #7ed7c1;
+  --blob-color-start: #5f5bd9;
+  --blob-color-end: #a594f9;
+}
